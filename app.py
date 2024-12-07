@@ -48,8 +48,8 @@ def predict():
         img_array = process_image(img_path)
         predictions = model.predict(img_array)
 
-        # Menentukan label yang diprediksi berdasarkan ambang batas 0.2 untuk multilabel
-        threshold = 0.2
+        # Menentukan label yang diprediksi berdasarkan ambang batas 0.3 untuk multilabel
+        threshold = 0.3
         predicted_labels = (predictions >= threshold).astype(int)
 
         # Menggabungkan label yang diprediksi dengan koma, serta persentase
