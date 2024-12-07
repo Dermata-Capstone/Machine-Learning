@@ -10,7 +10,7 @@ import tensorflow as tf
 app = Flask(__name__)
 
 # Memuat model InceptionV3 yang sudah disimpan
-model_path = 'Dermata_inceptionV3_V3.keras'  # Ganti dengan lokasi model Anda
+model_path = 'Dermata_inceptionV3_V3.keras'  # Ganti dengan lokasi model
 model = load_model(model_path)
 
 # Daftar label untuk model multilabel
